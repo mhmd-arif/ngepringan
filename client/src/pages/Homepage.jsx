@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import React, { useState, useEffect, useMemo } from "react";
-import { FaBars } from "react-icons/fa6";
+import { FaBars, FaInstagram, FaYoutube } from "react-icons/fa6";
 import { Bg, GG1, GG2, GG3, GG4, GG5, Logo } from "../assets";
 
 export default function Homepage() {
@@ -206,40 +206,40 @@ export default function Homepage() {
             <div className="flex flex-col text-4xl font-bold gap-4 lg:gap-6 pt-4">
               Informasi Padukuhan
               <div className="flex flex-row gap-4 w-full justify-center ">
-                <div className="flex flex-col items-center gap-2 ">
+                <div className="flex flex-col items-center gap-2 max-w-[250px]">
                   <img
                     src={GG3}
                     className="w-[250px] object-cover rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
                   />
                   <div className="flex flex-col items-center text-2xl">
-                    Slondok
+                    Kelompok Wanita Tani (KWT)
                   </div>
                 </div>
-                <div className="flex flex-col items-center gap-2 ">
+                <div className="flex flex-col items-center gap-2 max-w-[250px]">
                   <img
                     src={GG3}
                     className="w-[250px] object-cover rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
                   />
                   <div className="flex flex-col items-center text-2xl">
-                    Slondok
+                    Bina Keluarga Remaja (BKR)
                   </div>
                 </div>
-                <div className="flex flex-col items-center gap-2 ">
+                <div className="flex flex-col items-center gap-2 max-w-[250px]">
                   <img
                     src={GG3}
                     className="w-[250px] object-cover rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
                   />
                   <div className="flex flex-col items-center text-2xl">
-                    Slondok
+                    Bina Keluarga Lansia (BKL)
                   </div>
                 </div>
-                <div className="flex flex-col items-center gap-2 ">
+                <div className="flex flex-col items-center gap-2 max-w-[250px]">
                   <img
                     src={GG3}
                     className="w-[250px] object-cover rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
                   />
                   <div className="flex flex-col items-center text-2xl">
-                    Slondok
+                    Posyandu Balita
                   </div>
                 </div>
               </div>
@@ -249,40 +249,40 @@ export default function Homepage() {
             <div className="flex flex-col text-4xl font-bold gap-4 lg:gap-6 pt-4">
               Edukasi Digital
               <div className="flex flex-row gap-4 w-full justify-center ">
-                <div className="flex flex-col items-center gap-2 ">
+                <div className="flex flex-col items-center gap-2 max-w-[250px]">
                   <img
                     src={GG3}
                     className="w-[250px] object-cover rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
                   />
                   <div className="flex flex-col items-center text-2xl">
-                    Slondok
+                    Isi Piringku
                   </div>
                 </div>
-                <div className="flex flex-col items-center gap-2 ">
+                <div className="flex flex-col items-center gap-2 max-w-[250px]">
                   <img
                     src={GG3}
                     className="w-[250px] object-cover rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
                   />
                   <div className="flex flex-col items-center text-2xl">
-                    Slondok
+                    Apa itu Anemia?
                   </div>
                 </div>
-                <div className="flex flex-col items-center gap-2 ">
+                <div className="flex flex-col items-center gap-2 max-w-[250px]">
                   <img
                     src={GG3}
                     className="w-[250px] object-cover rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
                   />
                   <div className="flex flex-col items-center text-2xl">
-                    Slondok
+                    Cuci Tangan yang Baik
                   </div>
                 </div>
-                <div className="flex flex-col items-center gap-2 ">
+                <div className="flex flex-col items-center gap-2 max-w-[250px]">
                   <img
                     src={GG3}
                     className="w-[250px] object-cover rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
                   />
                   <div className="flex flex-col items-center text-2xl">
-                    Slondok
+                    Penyakit Menular Hewan
                   </div>
                 </div>
               </div>
@@ -345,32 +345,34 @@ export default function Homepage() {
                 Let's keep in touch!
               </h4>
               <h5 class="text-lg mt-0 mb-2 text-blueGray-600">
-                Find us on any of these platforms, we respond 1-2 business days.
+                Find us on any of these platforms.
               </h5>
               <div class="mt-6 lg:mb-0 mb-6">
-                <button
-                  class="bg-green text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-                  type="button"
-                >
-                  <i class="fab fa-twitter"></i>
-                </button>
-                <button
-                  class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-                  type="button"
-                >
-                  <i class="fab fa-facebook-square"></i>
-                </button>
                 <button
                   class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                   type="button"
                 >
-                  <i class="fab fa-dribbble"></i>
+                  <div className="flex flex-row justify-center items-center">
+                    <a
+                      className="text-[30px] text-red"
+                      href="https://www.instagram.com/ngepringan_4/"
+                    >
+                      <FaYoutube />
+                    </a>
+                  </div>
                 </button>
                 <button
                   class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                   type="button"
                 >
-                  <i class="fab fa-github"></i>
+                  <div className="flex flex-row justify-center items-center">
+                    <a
+                      className="text-[30px] text-[#dd2a7b]"
+                      href="https://www.instagram.com/ngepringan_4/"
+                    >
+                      <FaInstagram />
+                    </a>
+                  </div>
                 </button>
               </div>
             </div>
@@ -378,81 +380,58 @@ export default function Homepage() {
               <div class="flex flex-wrap items-top mb-6">
                 <div class="w-full lg:w-4/12 px-4 ml-auto">
                   <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">
-                    Useful Links
+                    Media Sosial
                   </span>
                   <ul class="list-unstyled">
-                    <li>
-                      <a
-                        class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="https://www.creative-tim.com/presentation?ref=njs-profile"
+                    <li className="flex items-center py-1">
+                      <button
+                        class="bg-white text-blueGray-800 shadow-lg font-normal h-6 w-6 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                        type="button"
                       >
-                        About Us
+                        <div className="flex flex-row justify-center items-center">
+                          <a
+                            className="text-[20px] text-[#dd2a7b]"
+                            href="https://www.instagram.com/ngepringan_4/"
+                          >
+                            <FaInstagram />
+                          </a>
+                        </div>
+                      </button>
+                      <a
+                        href="https://www.instagram.com/ngepringan_4/"
+                        className="font-semibold block text-sm"
+                      >
+                        Instagram
                       </a>
                     </li>
-                    <li>
-                      <a
-                        class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="https://blog.creative-tim.com?ref=njs-profile"
+                    <li className="flex items-center py-1">
+                      <button
+                        class="bg-white text-blueGray-800 shadow-lg font-normal h-6 w-6 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                        type="button"
                       >
-                        Blog
-                      </a>
-                    </li>
-                    <li>
+                        <div className="flex flex-row justify-center items-center">
+                          <a
+                            className="text-[20px] text-red"
+                            href="https://www.instagram.com/ngepringan_4/"
+                          >
+                            <FaYoutube />
+                          </a>
+                        </div>
+                      </button>
                       <a
-                        class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="https://www.github.com/creativetimofficial?ref=njs-profile"
+                        href="https://www.instagram.com/ngepringan_4/"
+                        className="font-semibold block text-sm"
                       >
-                        Github
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="https://www.creative-tim.com/bootstrap-themes/free?ref=njs-profile"
-                      >
-                        Free Products
+                        YouTube
                       </a>
                     </li>
                   </ul>
                 </div>
                 <div class="w-full lg:w-4/12 px-4">
                   <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">
-                    Other Resources
+                    Alamat
                   </span>
-                  <ul class="list-unstyled">
-                    <li>
-                      <a
-                        class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="https://github.com/creativetimofficial/notus-js/blob/main/LICENSE.md?ref=njs-profile"
-                      >
-                        MIT License
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="https://creative-tim.com/terms?ref=njs-profile"
-                      >
-                        Terms &amp; Conditions
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="https://creative-tim.com/privacy?ref=njs-profile"
-                      >
-                        Privacy Policy
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="https://creative-tim.com/contact-us?ref=njs-profile"
-                      >
-                        Contact Us
-                      </a>
-                    </li>
-                  </ul>
+                  <p>Ngepringan IV, Sendangrejo, Minggir, Sleman, Yogyakarta</p>
                 </div>
               </div>
             </div>
