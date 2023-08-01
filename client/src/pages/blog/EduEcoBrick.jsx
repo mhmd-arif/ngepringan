@@ -1,6 +1,17 @@
 import { useNavigate } from "react-router-dom";
 import { Button, ButtonGroup } from "@chakra-ui/react";
 import { Bg, GG1, GG2, GG3, GG4, GG5, Logo } from "../../assets";
+import {
+  eco1,
+  eco2,
+  eco3,
+  eco4,
+  eco6,
+  botol,
+  sampah,
+  gunting,
+  tongkat,
+} from "../../assets/image";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 
@@ -29,31 +40,31 @@ const EduEcoBrick = () => {
 
           <div>
             <h2>ALAT DAN BAHAN</h2>
-            <div className="grid grid-cols-4 w-full mt-5 justify-center gap-4 text-sm font-semibold">
+            <div className="grid grid-cols-4 w-full mt-5 justify-center gap-4 text-sm font-semibold px-20">
               <div className="flex flex-col items-center gap-2 ">
                 <img
-                  src={GG3}
+                  src={botol}
                   className="w-[150px] object-cover rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
                 />
                 <div>botol plastik</div>
               </div>
               <div className="flex flex-col items-center gap-2 ">
                 <img
-                  src={GG3}
+                  src={sampah}
                   className="w-[150px] object-cover rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
                 />
                 <div>sampah plastik </div>
               </div>
               <div className="flex flex-col items-center gap-2 ">
                 <img
-                  src={GG3}
+                  src={gunting}
                   className="w-[150px] object-cover rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
                 />
                 <div>gunting </div>
               </div>
               <div className="flex flex-col items-center gap-2 ">
                 <img
-                  src={GG3}
+                  src={tongkat}
                   className="w-[150px] object-cover rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
                 />
                 <div>tongkat</div>
@@ -63,50 +74,58 @@ const EduEcoBrick = () => {
 
           <div>
             <h2>LANGKAH-LANGKAH</h2>
-            <div className="grid grid-cols-3 w-full mt-5 gap-y-4 gap-x-8 text-sm font-semibold">
+            <div className="grid grid-cols-3 w-full mt-5 gap-y-4 gap-x-8 text-sm font-semibold px-10">
               <div className="flex flex-col items-center gap-2">
                 <img
-                  src={GG3}
+                  src={eco1}
                   className="w-[150px] object-cover rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
                 />
-                <div>Kumpulkan sampah plastik dan botol mineral</div>
+                <div className="px-10">
+                  Kumpulkan sampah plastik dan botol mineral
+                </div>
               </div>
               <div className="flex flex-col items-center gap-2 ">
                 <img
-                  src={GG3}
+                  src={eco2}
                   className="w-[150px] object-cover rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
                 />
-                <div>Bersihkan dan jemur sampah plastik dan botol mineral </div>
+                <div className="px-10">
+                  Bersihkan dan jemur sampah plastik dan botol mineral{" "}
+                </div>
               </div>
               <div className="flex flex-col items-center gap-2 ">
                 <img
-                  src={GG3}
+                  src={eco3}
                   className="w-[150px] object-cover rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
                 />
-                <div>Potong sampah plastik menjadi bagian-bagian kecil </div>
+                <div className="px-10">
+                  Potong sampah plastik menjadi bagian-bagian kecil{" "}
+                </div>
               </div>
               <div className="flex flex-col items-center gap-2  ">
                 <img
-                  src={GG3}
+                  src={eco4}
                   className="w-[150px] object-cover rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
                 />
-                <div>
+                <div className="px-10">
                   Masukan potongan sampah ke dalam botol dengan bantuan tongkat
                 </div>
               </div>
               <div className="flex flex-col items-center gap-2  ">
                 <img
-                  src={GG3}
+                  src={eco4}
                   className="w-[150px] object-cover rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
                 />
-                <div>Pastikan isi dalam botol terkompresi</div>
+                <div className="px-10">
+                  Pastikan isi dalam botol terkompresi
+                </div>
               </div>
               <div className="flex flex-col items-center gap-2  ">
                 <img
-                  src={GG3}
+                  src={eco6}
                   className="w-[150px] object-cover rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
                 />
-                <div>Hasil akhir eco brick</div>
+                <div className="px-10">Hasil akhir eco brick</div>
               </div>
             </div>
           </div>
