@@ -1,15 +1,43 @@
 import { useNavigate } from "react-router-dom";
 import React, { useState, useEffect, useMemo } from "react";
 import { Bg, GG1, GG2, GG3, GG4, GG5, Logo } from "../assets";
+import { pot6, tani4, eco6 } from "../assets/image";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
 export default function Homepage() {
-  const toInformation = () => {
+  const navigate = useNavigate();
+
+  const toContent = () => {
     const element = document.getElementById("section-information");
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
+  };
+
+  const toInformation = () => {
+    navigate("/informasi");
+    window.scrollTo(0, 0);
+  };
+
+  const toEducation = () => {
+    navigate("/edukasi");
+    window.scrollTo(0, 0);
+  };
+
+  const toEcoBrick = () => {
+    navigate("/edukasi/ecobrick");
+    window.scrollTo(0, 0);
+  };
+
+  const toPotTanaman = () => {
+    navigate("/edukasi/pottanamanhias");
+    window.scrollTo(0, 0);
+  };
+
+  const toPertanianMikro = () => {
+    navigate("/edukasi/pertanianmikro");
+    window.scrollTo(0, 0);
   };
 
   return (
@@ -37,7 +65,7 @@ export default function Homepage() {
                 </p>
                 <button
                   className="bg-green-dark text-white font-normal lg:text-xl text-lg py-2 px-6 rounded-lg transform duration-300 ease lg:hover:bg-black"
-                  onClick={toInformation}
+                  onClick={toContent}
                 >
                   Telusuri Sekarang
                 </button>
@@ -54,91 +82,131 @@ export default function Homepage() {
           <div className="flex flex-col gap-8 mt-10 lg:mt-0 lg:mx-10">
             <div id="section-information" className="pb-10 lg:pb-0 pt-6"></div>
             <div className="flex flex-col text-4xl font-bold gap-4 lg:gap-6 pt-4">
-              Informasi Padukuhan
+              <button onClick={toEducation}>Edukasi Digital</button>
               <div className="flex flex-row gap-4 w-full justify-center ">
-                <div className="flex flex-col items-center gap-2 max-w-[250px]">
+                <div
+                  className="flex flex-col items-center gap-2 max-w-[250px]"
+                  onClick={toPotTanaman}
+                >
                   <img
-                    src={GG3}
+                    src={pot6}
                     className="w-[250px] object-cover rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
                   />
-                  <div className="flex flex-col items-center text-2xl">
-                    Kelompok Wanita Tani (KWT)
-                  </div>
+                  <button className="flex flex-col items-center text-2xl">
+                    Pot Tanaman Hias
+                  </button>
                 </div>
-                <div className="flex flex-col items-center gap-2 max-w-[250px]">
+                <div
+                  className="flex flex-col items-center gap-2 max-w-[250px]"
+                  onClick={toEcoBrick}
+                >
                   <img
-                    src={GG3}
+                    src={eco6}
                     className="w-[250px] object-cover rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
                   />
-                  <div className="flex flex-col items-center text-2xl">
-                    Bina Keluarga Remaja (BKR)
-                  </div>
+                  <button className="flex flex-col items-center text-2xl">
+                    Eco Brick
+                  </button>
                 </div>
-                <div className="flex flex-col items-center gap-2 max-w-[250px]">
+                <div
+                  className="flex flex-col items-center gap-2 max-w-[250px]"
+                  onClick={toPertanianMikro}
+                >
                   <img
-                    src={GG3}
+                    src={tani4}
                     className="w-[250px] object-cover rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
                   />
-                  <div className="flex flex-col items-center text-2xl">
-                    Bina Keluarga Lansia (BKL)
-                  </div>
+                  <button className="flex flex-col items-center text-2xl">
+                    Pertanian Mikro
+                  </button>
                 </div>
-                <div className="flex flex-col items-center gap-2 max-w-[250px]">
+                <div
+                  className="flex flex-col items-center gap-2 max-w-[250px]"
+                  onClick={toPotTanaman}
+                >
                   <img
-                    src={GG3}
+                    src={pot6}
                     className="w-[250px] object-cover rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
                   />
-                  <div className="flex flex-col items-center text-2xl">
-                    Posyandu Balita
-                  </div>
+                  <button className="flex flex-col items-center text-2xl">
+                    Pot Tanaman Hias
+                  </button>
                 </div>
+              </div>
+              <div>
+                <button
+                  className="bg-green-dark text-white font-normal lg:text-base text-sm py-2 px-6 rounded-lg transform duration-300 ease lg:hover:bg-black "
+                  onClick={toEducation}
+                >
+                  lihat seluruhnya
+                </button>
               </div>
             </div>
 
             <div id="section-education" className="pb-10 lg:pb-0 pt-6"></div>
             <div className="flex flex-col text-4xl font-bold gap-4 lg:gap-6 pt-4">
-              Edukasi Digital
+              <button onClick={toEducation}>Edukasi Digital</button>
               <div className="flex flex-row gap-4 w-full justify-center ">
-                <div className="flex flex-col items-center gap-2 max-w-[250px]">
+                <div
+                  className="flex flex-col items-center gap-2 max-w-[250px]"
+                  onClick={toPotTanaman}
+                >
                   <img
-                    src={GG3}
+                    src={pot6}
                     className="w-[250px] object-cover rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
                   />
-                  <div className="flex flex-col items-center text-2xl">
-                    Isi Piringku
-                  </div>
+                  <button className="flex flex-col items-center text-2xl">
+                    Pot Tanaman Hias
+                  </button>
                 </div>
-                <div className="flex flex-col items-center gap-2 max-w-[250px]">
+                <div
+                  className="flex flex-col items-center gap-2 max-w-[250px]"
+                  onClick={toEcoBrick}
+                >
                   <img
-                    src={GG3}
+                    src={eco6}
                     className="w-[250px] object-cover rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
                   />
-                  <div className="flex flex-col items-center text-2xl">
-                    Apa itu Anemia?
-                  </div>
+                  <button className="flex flex-col items-center text-2xl">
+                    Eco Brick
+                  </button>
                 </div>
-                <div className="flex flex-col items-center gap-2 max-w-[250px]">
+                <div
+                  className="flex flex-col items-center gap-2 max-w-[250px]"
+                  onClick={toPertanianMikro}
+                >
                   <img
-                    src={GG3}
+                    src={tani4}
                     className="w-[250px] object-cover rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
                   />
-                  <div className="flex flex-col items-center text-2xl">
-                    Cuci Tangan yang Baik
-                  </div>
+                  <button className="flex flex-col items-center text-2xl">
+                    Pertanian Mikro
+                  </button>
                 </div>
-                <div className="flex flex-col items-center gap-2 max-w-[250px]">
+                <div
+                  className="flex flex-col items-center gap-2 max-w-[250px]"
+                  onClick={toPotTanaman}
+                >
                   <img
-                    src={GG3}
+                    src={pot6}
                     className="w-[250px] object-cover rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
                   />
-                  <div className="flex flex-col items-center text-2xl">
-                    Penyakit Menular Hewan
-                  </div>
+                  <button className="flex flex-col items-center text-2xl">
+                    Pot Tanaman Hias
+                  </button>
                 </div>
+              </div>
+              <div>
+                <button
+                  className="bg-green-dark text-white font-normal lg:text-base text-sm py-2 px-6 rounded-lg transform duration-300 ease lg:hover:bg-black "
+                  onClick={toEducation}
+                >
+                  lihat seluruhnya
+                </button>
               </div>
             </div>
 
-            <div id="section-gallery" className="pb-10 lg:pb-0 pt-6"></div>
+            {/* <div id="section-gallery" className="pb-10 lg:pb-0 pt-6"></div>
             <div className="flex flex-col text-4xl font-bold gap-4 lg:gap-6 pt-4">
               Galeri
               <div className="grid grid-cols-6 grid-rows-6 max-h-[30rem] gap-4">
@@ -167,7 +235,7 @@ export default function Homepage() {
                   className="row-span-3 col-span-1 object-cover w-full h-full rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
                 />
               </div>
-            </div>
+            </div> */}
 
             <div id="section-maps" className="pb-10 lg:pb-0"></div>
             <div className="flex flex-col text-4xl font-bold gap-4 lg:gap-6 pt-4">

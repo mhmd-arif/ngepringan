@@ -21,6 +21,7 @@ const Navbar = () => {
 
   const toHome = () => {
     navigate("/");
+    window.scrollTo(0, 0);
   };
 
   const toBottom = () => {
@@ -32,10 +33,12 @@ const Navbar = () => {
 
   const toInformation = () => {
     navigate("/informasi");
+    window.scrollTo(0, 0);
   };
 
   const toEducation = () => {
     navigate("/edukasi");
+    window.scrollTo(0, 0);
   };
 
   return (

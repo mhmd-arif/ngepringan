@@ -9,14 +9,17 @@ const Education = () => {
 
   const toEcoBrick = () => {
     navigate("/edukasi/ecobrick");
+    window.scrollTo(0, 0);
   };
 
   const toPotTanaman = () => {
     navigate("/edukasi/pottanamanhias");
+    window.scrollTo(0, 0);
   };
 
   const toPertanianMikro = () => {
     navigate("/edukasi/pertanianmikro");
+    window.scrollTo(0, 0);
   };
 
   return (
@@ -28,39 +31,39 @@ const Education = () => {
       >
         <div className="text-4xl font-bold">Edukasi Digital</div>
         <div className="grid grid-cols-4 w-full mt-10 justify-content-center font-bold">
-          <div className="flex flex-col items-center gap-2 ">
+          <div
+            className="flex flex-col items-center gap-2 "
+            onClick={toPotTanaman}
+          >
             <img
               src={pot6}
               className="w-[250px] object-cover rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
             />
-            <button
-              className="flex flex-col items-center text-2xl"
-              onClick={toPotTanaman}
-            >
+            <button className="flex flex-col items-center text-2xl">
               Pot Tanaman Hias
             </button>
           </div>
-          <div className="flex flex-col items-center gap-2 ">
+          <div
+            className="flex flex-col items-center gap-2 "
+            onClick={toEcoBrick}
+          >
             <img
               src={eco6}
               className="w-[250px] object-cover rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
             />
-            <button
-              className="flex flex-col items-center text-2xl"
-              onClick={toEcoBrick}
-            >
+            <button className="flex flex-col items-center text-2xl">
               Eco Brick
             </button>
           </div>
-          <div className="flex flex-col items-center gap-2 ">
+          <div
+            className="flex flex-col items-center gap-2 "
+            onClick={toPertanianMikro}
+          >
             <img
               src={tani4}
               className="w-[250px] object-cover rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
             />
-            <button
-              className="flex flex-col items-center text-2xl"
-              onClick={toPertanianMikro}
-            >
+            <button className="flex flex-col items-center text-2xl">
               Pertanian Mikro
             </button>
           </div>
