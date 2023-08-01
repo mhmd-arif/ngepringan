@@ -7,6 +7,18 @@ import Footer from "../components/Footer";
 const Education = () => {
   const navigate = useNavigate();
 
+  const toEcoBrick = () => {
+    navigate("/edukasi/ecobrick");
+  };
+
+  const toPotTanaman = () => {
+    navigate("/edukasi/pottanamanhias");
+  };
+
+  const toPertanianMikro = () => {
+    navigate("/edukasi/pertanianmikro");
+  };
+
   return (
     <>
       <Navbar />
@@ -21,25 +33,36 @@ const Education = () => {
               src={GG3}
               className="w-[250px] object-cover rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
             />
-            <div className="flex flex-col items-center text-2xl">
+            <button
+              className="flex flex-col items-center text-2xl"
+              onClick={toPotTanaman}
+            >
               Pot Tanaman Hias
-            </div>
+            </button>
           </div>
           <div className="flex flex-col items-center gap-2 ">
             <img
               src={GG3}
               className="w-[250px] object-cover rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
             />
-            <div className="flex flex-col items-center text-2xl">Eco Brick</div>
+            <button
+              className="flex flex-col items-center text-2xl"
+              onClick={toEcoBrick}
+            >
+              Eco Brick
+            </button>
           </div>
           <div className="flex flex-col items-center gap-2 ">
             <img
               src={GG3}
               className="w-[250px] object-cover rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
             />
-            <div className="flex flex-col items-center text-2xl">
+            <button
+              className="flex flex-col items-center text-2xl"
+              onClick={toPertanianMikro}
+            >
               Pertanian Mikro
-            </div>
+            </button>
           </div>
         </div>
       </div>
