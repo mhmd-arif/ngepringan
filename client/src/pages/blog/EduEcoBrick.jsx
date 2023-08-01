@@ -16,9 +16,9 @@ const EduEcoBrick = () => {
       >
         <h1 className="text-4xl mb-10">ECO BRICK</h1>
         <div className="max-w-4xl flex flex-col gap-14">
-          <div className="flex flex-col gap-2 ">
+          <div className="flex flex-col gap-2 items-center">
             <h2>TAUKAH KAMU?</h2>
-            <p className=" text-sm font-semibold">
+            <p className=" text-sm font-semibold max-w-2xl">
               Dari setiap botol air mineral yang kita gunakan setiap hari, kita
               memiliki kesempatan untuk menciptakan eco brick yang inovatif dan
               berdaya guna! <br /> Eco brick dapat dimanfaatkan sebagai bahan
@@ -111,12 +111,12 @@ const EduEcoBrick = () => {
             </div>
           </div>
 
-          <div>
+          <div className="w-full flex flex-col items-center">
             <h2>THANK YOU!</h2>
-            <div className="text-sm font-bold">
+            <div className="text-sm font-semibold max-w-2xl ">
               Mari manfaatkan sampah tersebut untuk memberikan kontribusi
-              positif <br />
-              bagi lingkungan dan menciptakan perubahan yang berkelanjutan.
+              positif bagi lingkungan dan menciptakan perubahan yang
+              berkelanjutan.
             </div>
           </div>
         </div>
