@@ -4,7 +4,7 @@ import { Bg, GG1, GG2, GG3, GG4, GG5, Logo } from "../assets";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
-const Education = () => {
+const Information = () => {
   const navigate = useNavigate();
 
   return (
@@ -22,7 +22,7 @@ const Education = () => {
               className="w-[250px] object-cover rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
             />
             <div className="flex flex-col items-center text-2xl">
-              Pot Tanaman Hias
+              Kelompok Wanita <br /> Tani (KWT)
             </div>
           </div>
           <div className="flex flex-col items-center gap-2 ">
@@ -30,7 +30,9 @@ const Education = () => {
               src={GG3}
               className="w-[250px] object-cover rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
             />
-            <div className="flex flex-col items-center text-2xl">Eco Brick</div>
+            <div className="flex flex-col items-center text-2xl">
+              Bina Keluarga <br /> Remaja (BKR)
+            </div>
           </div>
           <div className="flex flex-col items-center gap-2 ">
             <img
@@ -38,7 +40,16 @@ const Education = () => {
               className="w-[250px] object-cover rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
             />
             <div className="flex flex-col items-center text-2xl">
-              Pertanian Mikro
+              Bina Keluarga <br /> Lansia (BKL)
+            </div>
+          </div>
+          <div className="flex flex-col items-center gap-2 ">
+            <img
+              src={GG3}
+              className="w-[250px] object-cover rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
+            />
+            <div className="flex flex-col items-center text-2xl">
+              Posyandu Balita
             </div>
           </div>
         </div>
@@ -49,4 +60,4 @@ const Education = () => {
   );
 };
 
-export default Education;
+export default Information;

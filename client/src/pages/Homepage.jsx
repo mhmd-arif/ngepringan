@@ -5,10 +5,18 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
 export default function Homepage() {
+  const toInformation = () => {
+    const element = document.getElementById("section-information");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <Navbar />
       <div
+        id="Hero"
         className="w-full h-screen bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${Bg})` }}
       >
@@ -29,7 +37,7 @@ export default function Homepage() {
                 </p>
                 <button
                   className="bg-green-dark text-white font-normal lg:text-xl text-lg py-2 px-6 rounded-lg transform duration-300 ease lg:hover:bg-black"
-                  // onClick={toInformation}
+                  onClick={toInformation}
                 >
                   Telusuri Sekarang
                 </button>
@@ -40,8 +48,9 @@ export default function Homepage() {
           </div>
         </div>
       </div>
-      <div id="wisata" className="bg-white">
-        <div className="flex flex-col container mx-auto font-poppins items-center lg:text-center">
+
+      <div id="Body" className="bg-white">
+        <div className="flex flex-col container mx-auto font-poppins items-center lg:text-center ">
           <div className="flex flex-col gap-8 mt-10 lg:mt-0 lg:mx-10">
             <div id="section-information" className="pb-10 lg:pb-0 pt-6"></div>
             <div className="flex flex-col text-4xl font-bold gap-4 lg:gap-6 pt-4">

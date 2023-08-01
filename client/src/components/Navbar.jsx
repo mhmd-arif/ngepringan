@@ -38,13 +38,6 @@ const Navbar = () => {
     navigate("/edukasi");
   };
 
-  // const toGallery = () => {
-  //   const element = document.getElementById("section-gallery");
-  //   if (element) {
-  //     element.scrollIntoView({ behavior: "smooth" });
-  //   }
-  // };
-
   return (
     <div className="navbar">
       <div
