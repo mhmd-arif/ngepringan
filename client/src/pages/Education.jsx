@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { Button, ButtonGroup } from "@chakra-ui/react";
-import { Bg, GG1, GG2, GG3, GG4, GG5, Logo } from "../assets";
+import { eco6, tani4, pot6 } from "../assets/image";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
@@ -30,7 +30,7 @@ const Education = () => {
         <div className="grid grid-cols-4 w-full mt-10 justify-content-center font-bold">
           <div className="flex flex-col items-center gap-2 ">
             <img
-              src={GG3}
+              src={pot6}
               className="w-[250px] object-cover rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
             />
             <button
@@ -42,7 +42,7 @@ const Education = () => {
           </div>
           <div className="flex flex-col items-center gap-2 ">
             <img
-              src={GG3}
+              src={eco6}
               className="w-[250px] object-cover rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
             />
             <button
@@ -54,7 +54,7 @@ const Education = () => {
           </div>
           <div className="flex flex-col items-center gap-2 ">
             <img
-              src={GG3}
+              src={tani4}
               className="w-[250px] object-cover rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
             />
             <button
