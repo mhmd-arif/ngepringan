@@ -144,7 +144,7 @@ export default function Homepage() {
               <div className="grid grid-cols-6 grid-rows-6 max-h-[30rem] gap-4">
                 <img
                   src={GG1}
-                  className="row-span-3 col-span-3 object-cover w-full h-full rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
+                  className="row-span-3 col-span-3 object-cover w-full h-full rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md "
                 />
                 <img
                   src={GG2}
