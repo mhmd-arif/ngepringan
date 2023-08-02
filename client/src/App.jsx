@@ -5,7 +5,7 @@ import Education from "./pages/Education";
 import EduEcoBrick from "./pages/blog/EduEcoBrick";
 import EduPertanianMikro from "./pages/blog/EduPertanianMikro";
 import EduPotTanaman from "./pages/blog/EduPotTanaman";
-import InfoKWT from "./pages/blog/infoKWT";
+import ActKWT from "./pages/blog/ActKWT";
 
 import "./index.css";
 
@@ -18,7 +18,7 @@ function App() {
       <Route path="/edukasi/ecobrick" element={<EduEcoBrick />} />
       <Route path="/edukasi/pottanamanhias" element={<EduPotTanaman />} />
       <Route path="/edukasi/pertanianmikro" element={<EduPertanianMikro />} />
-      <Route path="/kegiatan/pertanianmikro" element={<EduPertanianMikro />} />
+      <Route path="/kegiatan/kwt" element={<ActKWT />} />
     </Routes>
   );
 }
