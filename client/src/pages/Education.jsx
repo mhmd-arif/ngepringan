@@ -27,10 +27,10 @@ const Education = () => {
       <Navbar />
       <div
         id="Body"
-        className=" w-full h-screen flex flex-col container mx-auto font-poppins items-center lg:text-center lg:mt-32"
+        className=" lg:max-w-5xl h-screen flex flex-col container mx-auto font-poppins items-center lg:text-center lg:mt-32"
       >
         <div className="text-4xl font-bold">Edukasi Digital</div>
-        <div className="grid grid-cols-4 w-full mt-10 justify-content-center font-bold">
+        <div className="grid grid-cols-4 gap-x-2 w-full mt-10 justify-content-center font-bold">
           <div
             className="flex flex-col items-center gap-2 "
             onClick={toPotTanaman}

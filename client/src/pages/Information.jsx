@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { Button, ButtonGroup } from "@chakra-ui/react";
-import { Bg, GG1, GG2, GG3, GG4, GG5, Logo } from "../assets";
+import { bkl4, bkr1, kwt1, posyandu4 } from "../assets/imgInformation";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
@@ -12,13 +12,13 @@ const Information = () => {
       <Navbar />
       <div
         id="Body"
-        className=" w-full h-screen flex flex-col container mx-auto font-poppins items-center lg:text-center lg:mt-32"
+        className=" lg:max-w-5xl h-screen flex flex-col container mx-auto font-poppins items-center lg:text-center lg:mt-32"
       >
         <div className="text-4xl font-bold">Informasi Padukuhan</div>
-        <div className="grid grid-cols-4 w-full mt-10 justify-content-center font-bold">
-          <div className="flex flex-col items-center gap-2 ">
+        <div className="grid grid-cols-4 gap-x-2 w-full mt-10 justify-content-center font-bold ">
+          <div className="flex flex-col items-center gap-2  ">
             <img
-              src={GG3}
+              src={kwt1}
               className="w-[250px] object-cover rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
             />
             <div className="flex flex-col items-center text-2xl">
@@ -27,16 +27,7 @@ const Information = () => {
           </div>
           <div className="flex flex-col items-center gap-2 ">
             <img
-              src={GG3}
-              className="w-[250px] object-cover rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
-            />
-            <div className="flex flex-col items-center text-2xl">
-              Bina Keluarga <br /> Remaja (BKR)
-            </div>
-          </div>
-          <div className="flex flex-col items-center gap-2 ">
-            <img
-              src={GG3}
+              src={bkl4}
               className="w-[250px] object-cover rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
             />
             <div className="flex flex-col items-center text-2xl">
@@ -45,11 +36,20 @@ const Information = () => {
           </div>
           <div className="flex flex-col items-center gap-2 ">
             <img
-              src={GG3}
+              src={bkr1}
               className="w-[250px] object-cover rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
             />
             <div className="flex flex-col items-center text-2xl">
-              Posyandu Balita
+              Bina Keluarga <br /> Remaja (BKR)
+            </div>
+          </div>
+          <div className="flex flex-col items-center gap-2 ">
+            <img
+              src={posyandu4}
+              className="w-[250px] object-cover rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
+            />
+            <div className="flex flex-col items-center text-2xl">
+              Posyandu Remaja
             </div>
           </div>
         </div>

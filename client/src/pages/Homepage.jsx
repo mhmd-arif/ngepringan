@@ -1,9 +1,10 @@
 import { useNavigate } from "react-router-dom";
 import React, { useState, useEffect, useMemo } from "react";
-import { Bg, GG1, GG2, GG3, GG4, GG5, Logo } from "../assets";
-import { pot6, tani4, eco6 } from "../assets/image";
+import { Bg, Logo } from "../assets";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import { pot6, tani4, eco6 } from "../assets/image";
+import { bkl4, bkr1, kwt1, posyandu4 } from "../assets/imgInformation";
 
 export default function Homepage() {
   const navigate = useNavigate();
@@ -77,23 +78,23 @@ export default function Homepage() {
         </div>
       </div>
 
-      <div id="Body" className="bg-white">
+      <div id="Body" className="bg-white  ">
         <div className="flex flex-col container mx-auto font-poppins items-center lg:text-center ">
           <div className="flex flex-col gap-8 mt-10 lg:mt-0 lg:mx-10">
             <div id="section-information" className="pb-10 lg:pb-0 pt-6"></div>
             <div className="flex flex-col text-4xl font-bold gap-4 lg:gap-6 pt-4">
-              <button onClick={toEducation}>Edukasi Digital</button>
+              <button onClick={toInformation}>Informasi Padukuhan</button>
               <div className="flex flex-row gap-4 w-full justify-center ">
                 <div
                   className="flex flex-col items-center gap-2 max-w-[250px]"
                   onClick={toPotTanaman}
                 >
                   <img
-                    src={pot6}
+                    src={kwt1}
                     className="w-[250px] object-cover rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
                   />
                   <button className="flex flex-col items-center text-2xl">
-                    Pot Tanaman Hias
+                    Kelompok Wanita Tani (KWT)
                   </button>
                 </div>
                 <div
@@ -101,11 +102,11 @@ export default function Homepage() {
                   onClick={toEcoBrick}
                 >
                   <img
-                    src={eco6}
+                    src={bkl4}
                     className="w-[250px] object-cover rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
                   />
                   <button className="flex flex-col items-center text-2xl">
-                    Eco Brick
+                    Bina Keluarga Lansia (BKL)
                   </button>
                 </div>
                 <div
@@ -113,11 +114,11 @@ export default function Homepage() {
                   onClick={toPertanianMikro}
                 >
                   <img
-                    src={tani4}
+                    src={bkr1}
                     className="w-[250px] object-cover rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
                   />
                   <button className="flex flex-col items-center text-2xl">
-                    Pertanian Mikro
+                    Bina Keluarga Remaja (BKR)
                   </button>
                 </div>
                 <div
@@ -125,18 +126,18 @@ export default function Homepage() {
                   onClick={toPotTanaman}
                 >
                   <img
-                    src={pot6}
+                    src={posyandu4}
                     className="w-[250px] object-cover rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
                   />
                   <button className="flex flex-col items-center text-2xl">
-                    Pot Tanaman Hias
+                    Posyandu Remaja
                   </button>
                 </div>
               </div>
               <div>
                 <button
                   className="bg-green-dark text-white font-normal lg:text-base text-sm py-2 px-6 rounded-lg transform duration-300 ease lg:hover:bg-black "
-                  onClick={toEducation}
+                  onClick={toInformation}
                 >
                   lihat seluruhnya
                 </button>
