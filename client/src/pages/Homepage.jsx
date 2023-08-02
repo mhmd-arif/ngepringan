@@ -4,7 +4,7 @@ import { Bg, Logo } from "../assets";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import { pot6, tani4, eco6 } from "../assets/image";
-import { bkl4, bkr1, kwt1, posyandu4 } from "../assets/imgInformation";
+import { bkl4, bkr1, kwt1, posyandu4 } from "../assets/imgActivity";
 
 export default function Homepage() {
   const navigate = useNavigate();
@@ -16,8 +16,8 @@ export default function Homepage() {
     }
   };
 
-  const toInformation = () => {
-    navigate("/informasi");
+  const toActivity = () => {
+    navigate("/kegiatan");
     window.scrollTo(0, 0);
   };
 
@@ -83,7 +83,7 @@ export default function Homepage() {
           <div className="flex flex-col gap-8 mt-10 lg:mt-0 lg:mx-10">
             <div id="section-information" className="pb-10 lg:pb-0 pt-6"></div>
             <div className="flex flex-col text-4xl font-bold gap-4 lg:gap-6 pt-4">
-              <button onClick={toInformation}>Informasi Padukuhan</button>
+              <button onClick={toActivity}>Kegiatan Padukuhan</button>
               <div className="flex flex-row gap-4 w-full justify-center ">
                 <div
                   className="flex flex-col items-center gap-2 max-w-[250px]"
@@ -137,7 +137,7 @@ export default function Homepage() {
               <div>
                 <button
                   className="bg-green-dark text-white font-normal lg:text-base text-sm py-2 px-6 rounded-lg transform duration-300 ease lg:hover:bg-black "
-                  onClick={toInformation}
+                  onClick={toActivity}
                 >
                   lihat seluruhnya
                 </button>

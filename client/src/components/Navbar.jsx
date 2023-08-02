@@ -31,8 +31,8 @@ const Navbar = () => {
     });
   };
 
-  const toInformation = () => {
-    navigate("/informasi");
+  const toActivity = () => {
+    navigate("/kegiatan");
     window.scrollTo(0, 0);
   };
 
@@ -87,8 +87,8 @@ const Navbar = () => {
           >
             Beranda
           </button>
-          <button className="hover:underline" onClick={toInformation}>
-            Informasi
+          <button className="hover:underline" onClick={toActivity}>
+            Kegiatan
           </button>
           <button className="hover:underline" onClick={toEducation}>
             Edukasi
@@ -117,10 +117,10 @@ const Navbar = () => {
           className="hover:bg-grey py-2"
           onClick={() => {
             setIsOpen((prev) => !prev);
-            toInformation();
+            toActivity();
           }}
         >
-          Informasi
+          Kegiatan
         </button>
         <button
           className="hover:bg-grey py-2"

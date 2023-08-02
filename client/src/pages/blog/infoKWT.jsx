@@ -1,19 +1,10 @@
 import { useNavigate } from "react-router-dom";
-import {
-  eco1,
-  eco2,
-  eco3,
-  eco4,
-  eco6,
-  botol,
-  sampah,
-  gunting,
-  tongkat,
-} from "../../assets/image";
+import { Button, ButtonGroup } from "@chakra-ui/react";
+import { kwt1, kwt2, kwt3, kwt4, kwt5, kwt6 } from "../../assets/imgActivity";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 
-const EduEcoBrick = () => {
+const InfoKWT = () => {
   const navigate = useNavigate();
 
   return (
@@ -144,4 +135,4 @@ const EduEcoBrick = () => {
   );
 };
 
-export default EduEcoBrick;
+export default InfoKWT;

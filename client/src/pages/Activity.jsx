@@ -1,10 +1,10 @@
 import { useNavigate } from "react-router-dom";
 import { Button, ButtonGroup } from "@chakra-ui/react";
-import { bkl4, bkr1, kwt1, posyandu4 } from "../assets/imgInformation";
+import { bkl4, bkr1, kwt1, posyandu4 } from "../assets/imgActivity";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
-const Information = () => {
+const Activity = () => {
   const navigate = useNavigate();
 
   return (
@@ -14,7 +14,7 @@ const Information = () => {
         id="Body"
         className=" lg:max-w-5xl h-screen flex flex-col container mx-auto font-poppins items-center lg:text-center lg:mt-32"
       >
-        <div className="text-4xl font-bold">Informasi Padukuhan</div>
+        <div className="text-4xl font-bold">Kegiatan Padukuhan</div>
         <div className="grid grid-cols-4 gap-x-2 w-full mt-10 justify-content-center font-bold ">
           <div className="flex flex-col items-center gap-2  ">
             <img
@@ -60,4 +60,4 @@ const Information = () => {
   );
 };
 
-export default Information;
+export default Activity;
