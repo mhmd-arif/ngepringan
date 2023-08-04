@@ -31,10 +31,10 @@ const Activity = () => {
       <Navbar />
       <div
         id="Body"
-        className=" lg:max-w-5xl h-screen flex flex-col container mx-auto font-poppins items-center lg:text-center lg:mt-32"
+        className=" lg:max-w-5xl h-screen flex flex-col container mx-auto font-poppins items-center lg:text-center lg:mt-32 mt-24 lg:mb-0 mb-[400px] "
       >
-        <div className="text-4xl font-bold">Kegiatan padukuhan</div>
-        <div className="grid grid-cols-4 gap-x-2 w-full mt-10 justify-content-center font-bold">
+        <div className="lg:text-4xl text-3xl font-bold">Kegiatan padukuhan</div>
+        <div className="grid lg:grid-cols-4 grid-cols-1 lg:gap-x-2 lg:gap-y-0 gap-y-8 w-full mt-10 justify-content-center font-bold lg:text-2xl text-xl">
           <div className="flex flex-col items-center gap-2 " onClick={toKWT}>
             <img
               src={kwt1}
