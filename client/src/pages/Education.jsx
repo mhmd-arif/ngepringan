@@ -27,7 +27,7 @@ const Education = () => {
       <Navbar />
       <div
         id="Body"
-        className=" lg:max-w-5xl h-screen flex flex-col container mx-auto font-poppins items-center lg:text-center lg:mt-32 mt-24 lg:mb-0 mb-64 "
+        className=" lg:max-w-5xl lg:h-screen flex flex-col container mx-auto font-poppins items-center lg:text-center lg:mt-32 mt-24 lg:mb-0  "
       >
         <div className="lg:text-4xl text-3xl font-bold">Edukasi Digital</div>
         <div className="grid lg:grid-cols-4 grid-cols-1 lg:gap-x-2 lg:gap-y-0 gap-y-8 w-full mt-10 justify-content-center font-bold lg:text-2xl text-xl">
