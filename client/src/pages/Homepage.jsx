@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import { pot6, tani4, eco6 } from "../assets/image";
 import { bkl4, bkr1, kwt1, posyandu4 } from "../assets/imgActivity";
+import ActKWT from "./blog/ActKWT";
 
 export default function Homepage() {
   const navigate = useNavigate();
@@ -18,6 +19,26 @@ export default function Homepage() {
 
   const toActivity = () => {
     navigate("/kegiatan");
+    window.scrollTo(0, 0);
+  };
+
+  const toKWT = () => {
+    navigate("/kegiatan/kwt");
+    window.scrollTo(0, 0);
+  };
+
+  const toBKR = () => {
+    navigate("/kegiatan/bkr");
+    window.scrollTo(0, 0);
+  };
+
+  const toBKL = () => {
+    navigate("/kegiatan/bkl");
+    window.scrollTo(0, 0);
+  };
+
+  const toPosyanduRemaja = () => {
+    navigate("/kegiatan/posyanduremaja");
     window.scrollTo(0, 0);
   };
 
@@ -87,7 +108,7 @@ export default function Homepage() {
               <div className="flex flex-row gap-4 w-full justify-center ">
                 <div
                   className="flex flex-col items-center gap-2 max-w-[250px]"
-                  onClick={toPotTanaman}
+                  onClick={toKWT}
                 >
                   <img
                     src={kwt1}
@@ -99,7 +120,7 @@ export default function Homepage() {
                 </div>
                 <div
                   className="flex flex-col items-center gap-2 max-w-[250px]"
-                  onClick={toEcoBrick}
+                  onClick={toBKL}
                 >
                   <img
                     src={bkl4}
@@ -111,7 +132,7 @@ export default function Homepage() {
                 </div>
                 <div
                   className="flex flex-col items-center gap-2 max-w-[250px]"
-                  onClick={toPertanianMikro}
+                  onClick={toBKR}
                 >
                   <img
                     src={bkr1}
@@ -123,7 +144,7 @@ export default function Homepage() {
                 </div>
                 <div
                   className="flex flex-col items-center gap-2 max-w-[250px]"
-                  onClick={toPotTanaman}
+                  onClick={toPosyanduRemaja}
                 >
                   <img
                     src={posyandu4}
