@@ -66,7 +66,7 @@ const ActPosyanduRemaja = () => {
                 className=" object-cover rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
               />
               <img
-                src={posyandu3}
+                src={posyandu4}
                 className=" object-cover rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
               />
               <img
