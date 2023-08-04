@@ -93,7 +93,7 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
-              <div className="w-full lg:w-4/12 px-4">
+              <div className="w-full lg:w-4/12 px-4 mt-2 md:mt-0">
                 <span className="block uppercase text-blueGray-500 text-sm font-semibold mb-2">
                   Alamat
                 </span>
