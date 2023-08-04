@@ -70,13 +70,13 @@ export default function Homepage() {
         className="w-full h-screen bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${Bg})` }}
       >
-        <div className="w-full h-full bg-gradient-to-t from-white">
+        <div className="w-full h-full bg-gradient-to-t from-white ">
           <div className="flex flex-col h-full container mx-auto items-center font-poppins text-green-dark">
             <div className="flex flex-col h-full items-center justify-between lg:justify-center pt-36 lg:pt-0 font-semibold lg:text-center leading-normal gap-8">
               <div className="hidden lg:flex h-20"></div>
               <img src={Logo} className="lg:w-1/12 w-1/3 lg:my-0 my-auto" />
               <div className="flex flex-col gap-8 lg:items-center">
-                <p className="lg:text-4xl text-5xl font-bold">
+                <p className="text-3xl lg:text-4xl  font-bold">
                   Telusuri
                   <br />
                   Dukuh Ngepringan IV
@@ -93,7 +93,7 @@ export default function Homepage() {
                 </button>
                 <div className="lg:h-2"></div>
               </div>
-              <div id="section-1" className="pb-10 lg:pb-0"></div>
+              <div id="section-1" className=" lg:pb-0"></div>
             </div>
           </div>
         </div>
@@ -101,11 +101,11 @@ export default function Homepage() {
 
       <div id="Body" className="bg-white  ">
         <div className="flex flex-col container mx-auto font-poppins items-center lg:text-center ">
-          <div className="flex flex-col gap-8 mt-10 lg:mt-0 lg:mx-10">
-            <div id="section-information" className="pb-10 lg:pb-0 pt-6"></div>
-            <div className="flex flex-col text-4xl font-bold gap-4 lg:gap-6 pt-4">
+          <div className="flex flex-col gap-8 lg:mt-0 lg:mx-10">
+            <div id="section-information" className=""></div>
+            <div className="flex flex-col lg:text-4xl text-3xl font-bold gap-4 lg:gap-6 pt-4">
               <button onClick={toActivity}>Kegiatan Padukuhan</button>
-              <div className="flex flex-row gap-4 w-full justify-center ">
+              <div className="flex lg:flex-row flex-col gap-4 w-full justify-center lg:items-start items-center">
                 <div
                   className="flex flex-col items-center gap-2 max-w-[250px]"
                   onClick={toKWT}
@@ -126,7 +126,7 @@ export default function Homepage() {
                     src={bkl4}
                     className="w-[250px] object-cover rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
                   />
-                  <button className="flex flex-col items-center text-2xl">
+                  <button className="flex flex-col items-center text-2xl ">
                     Bina Keluarga Lansia (BKL)
                   </button>
                 </div>
@@ -155,7 +155,7 @@ export default function Homepage() {
                   </button>
                 </div>
               </div>
-              <div>
+              <div className="flex justify-center items-center">
                 <button
                   className="bg-green-dark text-white font-normal lg:text-base text-sm py-2 px-6 rounded-lg transform duration-300 ease lg:hover:bg-black "
                   onClick={toActivity}
@@ -165,10 +165,10 @@ export default function Homepage() {
               </div>
             </div>
 
-            <div id="section-education" className="pb-10 lg:pb-0 pt-6"></div>
-            <div className="flex flex-col text-4xl font-bold gap-4 lg:gap-6 pt-4">
+            <div id="section-education" className=""></div>
+            <div className="flex flex-col lg:text-4xl text-3xl font-bold gap-4 lg:gap-6 pt-4">
               <button onClick={toEducation}>Edukasi Digital</button>
-              <div className="flex flex-row gap-4 w-full justify-center ">
+              <div className="flex lg:flex-row flex-col gap-4 w-full justify-center lg:items-start items-center">
                 <div
                   className="flex flex-col items-center gap-2 max-w-[250px]"
                   onClick={toPotTanaman}
@@ -218,7 +218,7 @@ export default function Homepage() {
                   </button>
                 </div>
               </div>
-              <div>
+              <div className="flex justify-center items-center">
                 <button
                   className="bg-green-dark text-white font-normal lg:text-base text-sm py-2 px-6 rounded-lg transform duration-300 ease lg:hover:bg-black "
                   onClick={toEducation}
@@ -227,37 +227,6 @@ export default function Homepage() {
                 </button>
               </div>
             </div>
-
-            {/* <div id="section-gallery" className="pb-10 lg:pb-0 pt-6"></div>
-            <div className="flex flex-col text-4xl font-bold gap-4 lg:gap-6 pt-4">
-              Galeri
-              <div className="grid grid-cols-6 grid-rows-6 max-h-[30rem] gap-4">
-                <img
-                  src={GG1}
-                  className="row-span-3 col-span-3 object-cover w-full h-full rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md "
-                />
-                <img
-                  src={GG2}
-                  className="row-span-6 col-span-1 object-cover w-full h-full rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
-                />
-                <img
-                  src={GG3}
-                  className="row-span-6 col-span-1 object-cover w-full h-full rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
-                />
-                <img
-                  src={GG5}
-                  className="row-span-3 col-span-1 object-cover w-full h-full rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
-                />
-                <img
-                  src={GG4}
-                  className="row-span-3 col-span-3 object-cover w-full h-full rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
-                />
-                <img
-                  src={Bg}
-                  className="row-span-3 col-span-1 object-cover w-full h-full rounded-lg transform ease duration-300 hover:scale-[1.02] hover:shadow-md"
-                />
-              </div>
-            </div> */}
 
             <div id="section-maps" className="pb-10 lg:pb-0"></div>
             <div className="flex flex-col text-4xl font-bold gap-4 lg:gap-6 pt-4">
