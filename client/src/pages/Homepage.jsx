@@ -229,7 +229,7 @@ export default function Homepage() {
             </div>
 
             <div id="section-maps" className="pb-10 lg:pb-0"></div>
-            <div className="flex flex-col text-4xl font-bold gap-4 lg:gap-6 pt-4">
+            <div className="flex flex-col lg:text-4xl text-3xl font-bold gap-4 lg:gap-6 pt-4 items-center">
               Lokasi
               <div className="flex flex-row justify-between w-full gap-4 h-[400px]">
                 <iframe
