@@ -21,8 +21,7 @@ import tani2 from './tani2.png'
 import tani3 from './tani3.png'
 import tani4 from './tani4.png'
 import tongkat from './tongkat.png'
+import vaksinlsd from './vaksinlsd.jpg'
 
 
-
-
-export { alatlukis, botol, eco1, eco2, eco3, eco4, eco6, galon, gunting, pisau,pot1, pot2,pot3, pot4, pot5, pot6, sampah, solder, tani1, tani2, tani3, tani4, tongkat}
+export { alatlukis, botol, eco1, eco2, eco3, eco4, eco6, galon, gunting, pisau,pot1, pot2,pot3, pot4, pot5, pot6, sampah, solder, tani1, tani2, tani3, tani4, tongkat, vaksinlsd}
