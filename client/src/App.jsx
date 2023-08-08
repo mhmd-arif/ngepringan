@@ -5,6 +5,7 @@ import Education from "./pages/Education";
 import EduEcoBrick from "./pages/blog/EduEcoBrick";
 import EduPertanianMikro from "./pages/blog/EduPertanianMikro";
 import EduPotTanaman from "./pages/blog/EduPotTanaman";
+import EduVaksinLsd from "./pages/blog/EduVaksinLsd";
 import ActKWT from "./pages/blog/ActKWT";
 import ActBKL from "./pages/blog/ActBKL";
 import ActBKR from "./pages/blog/ActBKR";
@@ -21,6 +22,7 @@ function App() {
       <Route path="/edukasi/ecobrick" element={<EduEcoBrick />} />
       <Route path="/edukasi/pottanamanhias" element={<EduPotTanaman />} />
       <Route path="/edukasi/pertanianmikro" element={<EduPertanianMikro />} />
+      <Route path="/edukasi/vaksinasilsd" element={<EduVaksinLsd />} />
       <Route path="/kegiatan/kwt" element={<ActKWT />} />
       <Route path="/kegiatan/bkl" element={<ActBKL />} />
       <Route path="/kegiatan/bkr" element={<ActBKR />} />
