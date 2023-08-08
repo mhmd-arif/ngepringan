@@ -15,6 +15,7 @@ import EduPotTanaman from "./pages/blog/EduPotTanaman";
 import EduVaksinLsd from "./pages/blog/EduVaksinLsd";
 import EduAirLele from "./pages/blog/EduAirLele";
 import EduDaurUlang from "./pages/blog/EduDaurUlang";
+import EduCiptakanKarya from "./pages/blog/EduCiptakanKarya";
 
 function App() {
   return (
@@ -28,7 +29,7 @@ function App() {
       <Route path="/edukasi/vaksinasilsd" element={<EduVaksinLsd />} />
       <Route path="/edukasi/pemanfaatanairkolamlele" element={<EduAirLele />} />
       <Route path="/edukasi/daurulang" element={<EduDaurUlang />} />
-      <Route path="/edukasi/ciptakankarya" element={<EduVaksinLsd />} />
+      <Route path="/edukasi/ciptakankarya" element={<EduCiptakanKarya />} />
       <Route path="/kegiatan/kwt" element={<ActKWT />} />
       <Route path="/kegiatan/bkl" element={<ActBKL />} />
       <Route path="/kegiatan/bkr" element={<ActBKR />} />
